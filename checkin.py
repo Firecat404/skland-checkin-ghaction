@@ -24,8 +24,6 @@ for cookie_line in cookie_lines:
     # 准备签到信息
     uid = cookie_line
     signing_cookie = Cred[i].strip()
-    print(Cred[i])
-    print(Cred[1])
     headers = {
         "user-agent": "Skland/1.0.1 (com.hypergryph.skland; build:100001014; Android 25; ) Okhttp/4.11.0",
         "cred": signing_cookie
@@ -64,7 +62,6 @@ for cookie_line in cookie_lines:
     else:
         if sign_response_json["message"]!="请勿重复签到！":
             FAIL_SIGN = True
-        print(uid,signing_cookie)
         print(sign_response_json)
         print("签到失败，请检查以上信息...")
 
