@@ -62,6 +62,7 @@ for cookie_line in cookie_lines:
     else:
         if sign_response_json["message"]!="请勿重复签到！":
             FAIL_SIGN = True
+        print(uid,signing_cookie)
         print(sign_response_json)
         print("签到失败，请检查以上信息...")
 
