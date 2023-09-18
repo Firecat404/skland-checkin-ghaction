@@ -11,9 +11,9 @@ SUCCESS_CODE = 0
 # 休眠三秒继续其他账号签到
 SLEEP_TIME = 3
 FAIL_SIGN = False
-Cred = sys.argv[2].split(";;")
+Cred = sys.argv[2].split(";")
 # 读取cookie
-cookie_lines = sys.argv[1].split(";;")
+cookie_lines = sys.argv[1].split(";")
 print("已读取" + str(len(cookie_lines)) + "个目标")
 print(str(SLEEP_TIME) + "秒后进行签到...")
 time.sleep(SLEEP_TIME)
